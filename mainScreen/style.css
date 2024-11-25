@@ -60,6 +60,7 @@ body {
 /*------------- Botão Alternar Modo Dark e Light ------------*/
 body.light {
   background: white;
+  color: black;
 }
 
 .checkbox {
@@ -136,6 +137,10 @@ body.light {
   flex-direction: column; /* Para organizar o conteúdo interno */
   font-size: 1.5em;
   color: #fff; /* Cor do texto */
+}
+
+.cardSynopsis.light{
+  color: black;
 }
 
 .cardSynopsis::before {
@@ -479,7 +484,7 @@ button#heroes:hover{
   margin-left: 250px;
   margin-top: -550px;
   border-radius: 20px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .contactForm h2{
@@ -495,19 +500,6 @@ button#heroes:hover{
   border-radius: 5px;
   padding-left: 10px;
   background-color: rgb(189, 189, 189);
-}
-
-.contactForm label#name{
-  margin-right: 530px;
-  font-size: 25px;
-}
-.contactForm label#email{
-  margin-right: 525px;
-  font-size: 25px;
-}
-.contactForm label#menssage{
-  margin-right: 495px;
-  font-size: 25px;
 }
 .contactForm ::placeholder{
   font-size: 15px;
@@ -562,11 +554,20 @@ footer{
   gap: 250px;
   cursor: pointer;
 }
-
+.footerNav a{
+  color: white;
+  text-decoration: none;
+}
 .linkedin, .gitHub{
   display: flex;
   flex-direction: row;
   gap: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.linkedin a, .gitHub a{
+  color: white;
 }
 .social img{
   width: 40px;
@@ -575,3 +576,214 @@ footer{
 }
 
 /*------------------------ MOBILE -----------------------------*/
+@media (max-width: 768px){
+  body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .nav{
+    height: 80px;
+    background-color: rgb(255, 77, 0);
+   
+  }
+  .logo img{
+    width: 8rem;
+    margin-top: 6px;
+  }
+  
+  .banner img{
+    height: 20rem;
+    object-fit: cover;
+    position: relative;
+    bottom: 16px;
+  }
+  
+  .synopsisAndWatch{
+    display: flex;
+    flex-direction: column;
+    margin-left: -120px;
+    bottom: 100px;
+    position: relative;
+  }
+  
+  .cardSynopsis{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;  
+    height: auto;
+    width: 350px;
+    margin-left: 140px;
+    padding-left: 15px;
+  }
+  
+  .responsive-text {
+    width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+    font-size: 4vw; /* Ajuste dinâmico do tamanho da fonte */
+    line-height: 1.4; /* Melhor espaçamento entre linhas */
+    word-break: break-word; /* Quebra palavras longas para não ultrapassarem a tela */
+    overflow-wrap: break-word; /* Garante que palavras grandes sejam divididas */
+  }
+  
+  .responsive-text {
+    font-size: 5vw; /* A fonte será 5% da largura da tela */
+  }
+  
+  .imageMidoriya img{
+    display: none;
+  }
+  
+  .midoriyaCharacter{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .midoriyaCharacter img{
+    width: 400px;
+    height: auto;
+    top: -205px;
+    margin-bottom: -300px;
+    position: relative;
+  }
+  
+  .information h2{
+    font-size: 25px;
+  }
+  
+  .highlight2{
+    font-size: 25px;
+    margin-left: 50px;
+  }
+
+  .buttonCharactersMidoriya{
+    width: 15rem;
+    margin-top: 30px;
+  }
+
+  button#characters{
+    height: 3rem;
+    left: 75px;
+    font-size: 20px;
+    top: 100px;
+  }
+
+  #typing-effect p{
+    margin-left: -230px;
+    font-size: 30px;
+    }
+
+  .otherHeroes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  button#heroes{
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+
+  .favoriteEpisodes{
+    margin-left: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .favoriteEpisodes h1{
+    font-size: 45px;
+    }
+
+  .name img{
+    display: none;
+  }
+
+  .favoriteEpisodes h2{
+    font-size: 30px;
+    margin-left: -50px;
+
+  }
+
+  .favoriteEpisodes p{
+    font-size: 20px;
+    margin-left: -150px;
+  }
+
+  .favoriteEpisodes h5{
+    font-size: 20px;
+    margin-left: -150px;
+  }
+
+  .video{
+    width: 100px;
+    height: 200px;
+    top: 50px;
+    left: 200px;
+  }
+
+  .firtsEpisode{
+    margin-bottom: 500px;
+  }
+
+  .secondEpisode{
+    margin-bottom: 500px;
+  }
+
+  .thirdEpisode{
+    margin-bottom: 500px;
+  }
+
+  .form img{
+    display: none;
+  }
+
+  .form{
+    margin-top: 400px;
+    margin-left: -230px;
+  }
+
+  .contactForm{
+    width: 350px;
+    gap: 50px;
+  }
+
+  .contactForm label{
+    display: none;
+  }
+
+  .contactForm h2{
+    font-size: 30px;
+    width: 100%;
+    margin-right: 5px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .contactForm input, .contactForm textarea{
+    width: 300px;
+    margin-right: 25px;
+  }
+
+  button#Submit{
+    margin-right: 130px;
+    bottom: 20px;
+    position: relative;
+  }
+
+  .footerNav{
+    margin-top: -40px;
+    font-size: 18px;
+    position: relative;
+    right: 230px;
+    }
+
+  .dev{
+    font-size: 18px;
+    position: relative;
+    right: 450px;
+  }
+  .social{
+    font-size: 18px;
+    position: relative;
+    right: 670px;
+  }
+}

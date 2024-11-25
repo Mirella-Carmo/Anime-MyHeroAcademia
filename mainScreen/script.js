@@ -33,9 +33,9 @@ observer.observe(typingElement);
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+    const name = document.getElementById("nameInput").value.trim();
+    const email = document.getElementById("emailInput").value.trim();
+    const message = document.getElementById("messageInput").value.trim();
 
     if (!name || !email || !message) {
         alert("Por favor, preencha todos os campos!");
@@ -51,10 +51,3 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     alert("Mensagem enviada com sucesso!");
     this.reset();
 });
-
-/*------------ Toggle Menu ---------------*/
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('open');
-}
-

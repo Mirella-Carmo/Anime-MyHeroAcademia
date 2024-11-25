@@ -64,7 +64,7 @@
                 <div class="imageMidoriya">
                     <img src="img/midoriya.png" alt="">
                 </div>
-                <p><span class="highlight">My Hero Academia</span> é um anime cheio de ação, ambientado em um mundo onde
+                <p class="responsive-text"><span class="highlight">My Hero Academia</span> é um anime cheio de ação, ambientado em um mundo onde
                     quase todas as pessoas possuem superpoderes, conhecidos como Individualidade. No entanto, o jovem
                     Izuku Midoriya nasceu sem poder algum, o que o faz se sentir incapaz de alcançar seu maior sonho: se
                     tornar um herói. Mas, com muita determinação e coragem, ele encontra uma oportunidade única que
@@ -187,44 +187,45 @@
         </div>
     </section>
 <!---------------------------------Form---------------------------------->
-    <section class="form" id="contact">
-        <img src="img/urarakaImg.png" alt="">
-        <form class="contactForm" id="contactForm">
-            <h2>Gostou desse site? Entre em contato</h2>
-    
-            <label id="name" for="name">Nome</label>
-            <input type="text" id="name" placeholder="Digite seu nome" required>
-    
-            <label id="email" for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" required>
-    
-            <label id="menssage" for="message">Mensagem</label>
-            <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
-    
-            <button id="Submit" type="submit">Enviar</button>
-        </form>
-    </section>
+<section class="form" id="contact">
+    <img src="img/urarakaImg.png" alt="">
+    <form class="contactForm" id="contactForm">
+        <h2>Gostou desse site? Entre em contato</h2>
 
+        <label for="nameInput"></label>
+        <input type="text" id="nameInput" placeholder="Digite seu nome" required>
+
+        <label for="emailInput"></label>
+        <input type="email" id="emailInput" placeholder="Digite seu e-mail" required>
+
+        <label for="messageInput"></label>
+        <textarea id="messageInput" placeholder="Digite sua mensagem" required></textarea>
+
+        <button id="Submit" type="submit">Enviar</button>
+    </form>
+</section>
+
+<!------------------Footer-------------------------->
     <footer>
         <div class="footerNav">
-            <p id="top">Anime</p>
-            <p id="synopsis">Resumo My Hero Academia</p>
-            <p id="characters">Personagens</p>
-            <p id="episodes">Melhores Episódios</p>
+            <a href="#top"><p>Anime</p></a>
+            <a href="#synopsis"><p>Resumo My Hero Academia</p></a>
+            <a href="#characters"><p>Personagens</p></a>
+            <a href="#episodes"><p>Melhores Episódios</p></a>
         </div>
         <div class="dev">
-            <p id="contact">Contato</p>
+            <a href="#contact"><p>Contato</p></a>
             <p>Dev Mirella Carmo</p>
         </div>
         <div class="social">
             <p>Meu Trabalho:</p>
             <div class="linkedin">
                 <img src="https://cdn-icons-png.flaticon.com/512/4138/4138130.png" alt="">
-                <p>Linkedin</p>
+                <a href="https://www.linkedin.com/in/mirella-carmo-611ab1266/" target="_blank">Linkedin</a>
             </div>
             <div class="gitHub">
                 <img src="https://img.icons8.com/m_sharp/200/FFFFFF/github.png" alt="">
-                <p>GitHub</p>
+                <a href="https://github.com/Mirella-Carmo">GitHub</a>
             </div>
         </div>
     </footer>
