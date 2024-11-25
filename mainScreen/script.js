@@ -52,3 +52,9 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     this.reset();
 });
 
+/*------------ Toggle Menu ---------------*/
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('open');
+}
+
