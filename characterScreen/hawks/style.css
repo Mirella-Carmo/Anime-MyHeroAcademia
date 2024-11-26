@@ -1,118 +1,153 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.banner img{
+.banner img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+button {
+  width: 10rem;
+  height: 4rem;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  z-index: 20;
+  bottom: 100px;
+  position: relative;
+  margin-left: 50px;
+}
+
+button:hover {
+  background-color: orangered;
+}
+
+.resume {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 20px;
+}
+
+.resume h1 {
+  text-align: center;
+  color: red;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.secondResume {
+  width: 60rem;
+  height: 30rem;
+  margin-left: 220px;
+  margin-top: 50px;
+}
+
+.photo img {
+  position: relative;
+  bottom: 420px;
+  height: 30rem;
+  right: 55px;
+}
+
+.characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  padding-left: 400px;
+  border-radius: 20px;
+}
+
+.characteristics h2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 20px;
+}
+
+.highlight2 {
+  background-color: rgb(255, 234, 0);
+  height: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer {
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 12rem;
+  position: relative;
+  top: 205px;
+  gap: 50px;
+}
+
+footer p {
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.secondResume img {
+  width: 250px;
+  height: auto;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+
+footer button {
+  position: relative;
+  top: 70px;
+  background: yellow;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .resume {
     width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-
-button{
-    width: 10rem;
-    height: 4rem;
-    font-size: 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    z-index: 20;
-    bottom: 100px;
-    position: relative;
-    margin-left: 50px;
-}
-
-button:hover{
-    background-color: orangered;
-}
-
-.resume{
-    margin-top: -50px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 150px;
-    padding-right: 150px;
-    font-size: 20px;
-}
-
-.resume h1{
-    text-align: center;
-    color: red;
-}
-
-.highlight{
-    color: red;
-    font-weight: bold;
-}
-
-.secondResume{
-    width: 60rem;
-    height: 30rem;
-    margin-left: 220px;
-    margin-top: 50px;
-}
-
-.photo img{
-    position: relative;
-    bottom: 420px;
-    height: 30rem;
-    right: 55px;
-}
-
-.characteristics{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: rgb(255, 102, 0);
-    color: white;
-    padding-left: 400px;
-    border-radius: 20px;
-  }
-  
-.characteristics h2{
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    gap: 20px;
-  }
-.highlight2{
-    background-color: rgb(255, 234, 0);
-    height: 30px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: -145px;
   }
 
-  footer{
-    background-color: red;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 12rem;
-    position: relative;
-    top: 205px;
-    gap: 50px;
+  .secondResume {
+    margin-left: 20px;
+    width: 500px;
   }
 
-  footer p{
-    font-size: 20px;
-    margin-top: 80px;
+  .characteristics {
+    padding: 10px;
   }
 
-  .secondResume img{
-    width: 250px;
-    height: auto;
-    margin-left: 150px;
-    margin-top: 70px;
+  .photo {
+    display: none;
   }
 
-  footer button{
-    position: relative;
-    top: 70px;
-    background: yellow;
-    color: black;
+  footer img {
+    width: 200px;
+    height: 100px;
+    margin-top: 40px;
   }
+
+  footer button {
+    display: none;
+  }
+}

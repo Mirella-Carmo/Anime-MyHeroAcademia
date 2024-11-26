@@ -59,8 +59,7 @@ body {
 
 /*------------- Botão Alternar Modo Dark e Light ------------*/
 body.light {
-  background: white;
-  color: black;
+  background: rgb(161, 161, 161);
 }
 
 .checkbox {
